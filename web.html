@@ -1,0 +1,158 @@
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>B3</h2>
+
+<table style="width:100%">
+  <tr>
+    <th rowspan="2" colspan="2">student</th>
+    <th rowspan="1" colspan="4">exam</th>
+    <th rowspan="1" colspan="4">2end exam</th>
+    <th rowspan="2" colspan="2">Final Grade</th>
+  </tr>
+  <tr>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td rowspan="2" colspan="1">Grade</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td rowspan="2" colspan="1">Grade</td>
+  </tr>
+  <tr>
+    <td>Code</td>
+    <td>Name</td>
+    <td>8</td>
+    <td>7</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>NR</td>
+    <td>R</td>
+  </tr>
+  <tr>
+    <td>80549061</td>
+    <td>John</td>
+    <td>70%</td>
+    <td>100%</td>
+    <td>100%</td>
+    <td>17.6</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>17.6</td>
+    <td>18</td>
+  </tr>
+  <tr>
+  <td>80549062</td>
+    <td>Marry</td>
+    <td>10%</td>
+    <td>50%</td>
+    <td>50%</td>
+    <td>6.8</td>
+    <td>100%</td>
+    <td>100%</td>
+    <td>50%</td>
+    <td>16.5</td>
+    <td>16.6</td>
+    <td>17</td>
+   </tr>
+   <tr>
+    <td>80549063</td>
+    <td>claire</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>50%</td>
+    <td>50%</td>
+    <td>50%</td>
+    <td>10.0</td>
+    <td>10.0</td>
+    <td>10</td>
+    </tr>
+
+</table>
+</body>
+</html>
+
+BÀI TẬP 04: Tổ chức thảo luận để xác định bố cục, nhận định các kiểu phần tử sẽ cần xây
+dựng trang web có thành phần như bên dưới và tiến hành lập trình trang web chứa FORM
+mẫu như sau:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+</head>
+<body>
+  <h2>Basic Info</h2>
+  <form action="#" method="post">
+    <label>Employee ID: <input type="text" name="emp_id"></label><br>
+    <label>Last Name: <input type="text" name="last_name"></label><br>
+    <label>First Name: <input type="text" name="first_name"></label><br>
+
+    <p>Gender:
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="xxx"> XXX
+      <input type="radio" name="gender" value="zzz"> ZZZ
+    </p>
+
+    <label>Title: <input type="text" name="title"></label><br>
+    <label>Suffix: <input type="text" name="suffix"></label><br>
+    <label>BirthDate: <input type="date" name="birthdate"></label><br>
+    <label>HireDate: <input type="date" name="hiredate"></label><br>
+    <label>Reports To:
+      <select name="reports">
+        <option value="buchanan">Buchanan</option>
+      </select>
+    </label><br>
+
+    <h2>Contact Info</h2>
+    <label>Email: <input type="email" name="email"></label><br>
+    <label>Address: <input type="text" name="address"></label><br>
+    <label>City: <input type="text" name="city"></label><br>
+    <label>Region: <input type="text" name="region"></label><br>
+    <label>Postal Code: <input type="text" name="postal"></label><br>
+    <label>Country:
+      <select name="country">
+        <option value="ru">Russian Federation</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </label><br>
+    <label>US Home Phone: <input type="tel" name="phone"></label><br>
+    <label>Photo: <input type="file" name="photo"></label><br>
+
+    <h2>Optional Info</h2>
+    <label>Notes:<br>
+      <textarea name="notes" rows="5" cols="40"></textarea>
+    </label><br>
+
+    <p>Preferred Shift:
+      <input type="checkbox" name="shift" value="regular"> Regular
+      <input type="checkbox" name="shift" value="graveyard"> Gravy Yard
+    </p>
+
+    <p>Active:
+      <input type="checkbox" name="active" checked>
+    </p>
+
+    <p>Are you human?
+      <input type="text" name="captcha" placeholder="Enter code">
+    </p>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Cancel">
+  </form>
+</body>
+</html>
